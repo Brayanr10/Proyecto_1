@@ -1,0 +1,1268 @@
+/ *!
+ * Fuente impresionante 3.1.0
+ * la fuente icónica diseñada para Bootstrap
+ * ------------------------------------------------- ------
+ * El conjunto completo de iconos pictográficos, ejemplos y documentación
+ * se puede encontrar en: http://fontawesome.io
+ *
+ * Licencia
+ * ------------------------------------------------- ------
+ * - La fuente Font Awesome está licenciada bajo la Licencia de fuente abierta SIL v1.1 -
+ * http://scripts.sil.org/OFL
+ * - Los archivos Font Awesome CSS, LESS y SASS están licenciados bajo la licencia MIT -
+ * http://opensource.org/licenses/mit-license.html
+ * - Documentación de Font Awesome con licencia CC BY 3.0 License -
+ * http://creativecommons.org/licenses/by/3.0/
+ * - La atribución ya no es necesaria en Font Awesome 3.0, pero se agradece mucho:
+ * "Font Awesome por Dave Gandy - http://fontawesome.io"
+
+ * Contacto
+ * ------------------------------------------------- ------
+ * Correo electrónico: dave@fontawesome.io
+ * Twitter: http://twitter.com/fortaweso_me
+ * Trabajo: Lead Product Designer @ http://kyruus.com
+ * /
+/ * RUTA DE LA FUENTE
+ * -------------------------- * /
+@Perfil delantero {
+  font-family: 'FontAwesome';
+  src: url ('../ font / fontawesome-webfont.eot? v = 3.1.0');
+  src: url ('../ font / fontawesome-webfont.eot? # iefix & v = 3.1.0') formato ('embedded-opentype'), url ('../ font / fontawesome-webfont.woff? v = 3.1 .0 ') formato (' woff '), url (' ../ font / fontawesome-webfont.ttf? V = 3.1.0 ') formato (' truetype '), url (' ../ font / fontawesome-webfont .svg # fontawesomeregular? v = 3.1.0 ') formato (' svg ');
+  font-weight: normal;
+  estilo de fuente: normal;
+}
+/ * FONT AWESOME CORE
+ * -------------------------- * /
+[clase ^ = "icono-"],
+[clase * = "icono-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  estilo de fuente: normal;
+  texto-decoración: heredar;
+  -webkit-font-smoothing: antialiased;
+  * margin-right: .3em;
+}
+[clase ^ = "icono -"]: antes,
+[clase * = "icono -"]: antes {
+  texto-decoración: heredar;
+  pantalla: bloque en línea;
+  hablar: ninguno;
+}
+/ * hace que la fuente sea un 33% más grande en relación con el contenedor de iconos * /
+.icon-large: before {
+  alineación vertical: -10%;
+  tamaño de fuente: 1.3333333333333333em;
+}
+/ * asegura que los iconos estén activos en rollover en enlaces * /
+a [class ^ = "icon-"],
+a [clase * = "icono-"],
+a [clase ^ = "icono -"]: antes,
+a [class * = "icon -"]: before {
+  pantalla: en línea;
+}
+/ * aumento del tamaño de fuente para icon-large * /
+[class ^ = "icon -"]. icon-fixed-width,
+[class * = "icon -"]. icon-fixed-width {
+  pantalla: bloque en línea;
+  ancho: 1.2857142857142858em;
+  text-align: center;
+}
+[class ^ = "icon -"]. icon-fixed-width.icon-large,
+[clase * = "icono -"]. icon-fixed-width.icon-large {
+  ancho: 1.5714285714285714em;
+}
+ul.icons-ul {
+  list-style-type: none;
+  texto-sangría: -0.7142857142857143em;
+  margin-left: 2.142857142857143em;
+}
+ul.icons-ul> li .icon-li {
+  ancho: 0.7142857142857143em;
+  pantalla: bloque en línea;
+  text-align: center;
+}
+[clase ^ = "icono -"]. ocultar,
+[class * = "icon -"]. hide {
+  pantalla: ninguna;
+}
+.icon-silenciado {
+  color: #eeeeee;
+}
+.icon-light {
+  color: #ffffff;
+}
+.icon-dark {
+  color: # 333333;
+}
+.icon-border {
+  borde: sólido 1px #eeeeee;
+  relleno: .2em .25em. 15em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.icon-2x {
+  tamaño de letra: 2em;
+}
+.icon-2x.icon-border {
+  ancho del borde: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  radio del borde: 4px;
+}
+.icon-3x {
+  tamaño de letra: 3em;
+}
+.icon-3x.icon-border {
+  ancho del borde: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  radio del borde: 5px;
+}
+.icon-4x {
+  tamaño de letra: 4em;
+}
+.icon-4x.icon-border {
+  ancho del borde: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  radio del borde: 6px;
+}
+.icon-5x {
+  tamaño de fuente: 5em;
+}
+.icon-5x.icon-border {
+  ancho del borde: 5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  radio del borde: 7px;
+}
+.pull-right {
+  flotar derecho;
+}
+.pull-left {
+  flotador izquierdo;
+}
+[class ^ = "icon -"]. pull-left,
+[clase * = "icono -"]. pull-left {
+  margen-derecha: .3em;
+}
+[class ^ = "icon -"]. pull-right,
+[clase * = "icono -"]. pull-right {
+  margin-left: .3em;
+}
+/ * CLASES ESPECÍFICAS DE BOOTSTRAP
+ * -------------------------- * /
+/ * Bootstrap 2.0 sprites.less reset * /
+[clase ^ = "icono-"],
+[clase * = "icono-"] {
+  pantalla: en línea;
+  ancho: automático;
+  altura: auto;
+  línea-altura: normal;
+  vertical-align: línea base;
+  imagen de fondo: ninguno;
+  posición de fondo: 0% 0%;
+  repetición de fondo: repetir;
+  margin-top: 0;
+}
+/ * más sprites.less reset * /
+.icon-white,
+.nav-pills> .active> a> [class ^ = "icon-"],
+.nav-pills> .active> a> [class * = "icon-"],
+.nav-list> .active> a> [class ^ = "icon-"],
+.nav-list> .active> a> [clase * = "icono-"],
+.navbar-inverse .nav> .active> a> [class ^ = "icon-"],
+.navbar-inverse .nav> .active> a> [clase * = "icono-"],
+.downdown-menu> li> a: hover> [clase ^ = "icono-"],
+.downdown-menu> li> a: hover> [clase * = "icono-"],
+.downdown-menu> .active> a> [class ^ = "icon-"],
+.dropdown-menu> .active> a> [clase * = "icono-"],
+.dropdown-submenu: hover> a> [class ^ = "icon-"],
+.dropdown-submenu: hover> a> [class * = "icon-"] {
+  imagen de fondo: ninguno;
+}
+/ * mantiene los estilos Bootstrap con y sin iconos del mismo * /
+.btn [clase ^ = "icono -"]. ícono-grande,
+.nav [clase ^ = "icono -"]. ícono-grande,
+.btn [clase * = "icono -"]. ícono-grande,
+.nav [clase * = "icono -"]. ícono-grande {
+  línea-altura: .9em;
+}
+.btn [clase ^ = "icono -"]. icon-spin,
+.nav [clase ^ = "icono -"]. icon-spin,
+.btn [clase * = "icono -"]. icon-spin,
+.nav [clase * = "icono -"]. icon-spin {
+  pantalla: bloque en línea;
+}
+.nav-tabs [clase ^ = "icono-"],
+.nav-pills [class ^ = "icon-"],
+.nav-tabs [clase * = "icono-"],
+.nav-pills [clase * = "icono-"],
+.nav-tabs [clase ^ = "icono -"]. ícono-grande,
+.nav-pills [class ^ = "icon -"]. icon-large,
+.nav-tabs [clase * = "icono -"]. ícono-grande,
+.nav-pills [class * = "icon -"]. icon-large {
+  línea-altura: .9em;
+}
+.btn [clase ^ = "icono -"]. pull-left.icon-2x,
+.btn [clase * = "icono -"]. pull-left.icon-2x,
+.btn [clase ^ = "icono -"]. pull-right.icon-2x,
+.btn [clase * = "icono -"]. pull-right.icon-2x {
+  margin-top: .18em;
+}
+.btn [clase ^ = "icono -"]. icon-spin.icon-large,
+.btn [clase * = "icono -"]. icon-spin.icon-large {
+  línea-altura: .8em;
+}
+.btn.btn-small [clase ^ = "icono -"]. pull-left.icon-2x,
+.btn.btn-small [clase * = "icono -"]. pull-left.icon-2x,
+.btn.btn-small [clase ^ = "icono -"]. pull-right.icon-2x,
+.btn.btn-small [clase * = "icono -"]. pull-right.icon-2x {
+  margin-top: .25em;
+}
+.btn.btn-large [clase ^ = "icono-"],
+.btn.btn-large [clase * = "icono-"] {
+  margin-top: 0;
+}
+.btn.btn-large [clase ^ = "icono -"]. pull-left.icon-2x,
+.btn.btn-large [clase * = "icono -"]. pull-left.icon-2x,
+.btn.btn-large [clase ^ = "icono -"]. pull-right.icon-2x,
+.btn.btn-large [clase * = "icono -"]. pull-right.icon-2x {
+  margin-top: .05em;
+}
+.btn.btn-large [clase ^ = "icono -"]. pull-left.icon-2x,
+.btn.btn-large [clase * = "icono -"]. pull-left.icon-2x {
+  margen-derecha: .2em;
+}
+.btn.btn-large [clase ^ = "icono -"]. pull-right.icon-2x,
+.btn.btn-large [clase * = "icono -"]. pull-right.icon-2x {
+  margin-left: .2em;
+}
+/ * EXTRAS
+ * -------------------------- * /
+/ * Icono apilado y en capas * /
+.icon-stack {
+  posición: relativa;
+  pantalla: bloque en línea;
+  ancho: 2em;
+  altura: 2em;
+  línea-altura: 2em;
+  alineación vertical: -35%;
+}
+.icon-stack [class ^ = "icon-"],
+.icon-stack [class * = "icon-"] {
+  bloqueo de pantalla;
+  text-align: center;
+  posición: absoluta;
+  ancho: 100%;
+  altura: 100%;
+  tamaño de fuente: 1em;
+  línea-altura: heredar;
+  * línea-altura: 2em;
+}
+.icon-stack .icon-stack-base {
+  tamaño de letra: 2em;
+  * línea-altura: 1em;
+}
+/ * Icono giratorio animado * /
+.icon-spin {
+  pantalla: bloque en línea;
+  -moz-animación: spin 2s infinito lineal;
+  -o-animación: spin 2s infinito lineal;
+  -webkit-animation: spin 2s infinito lineal;
+  animación: spin 2s infinite linear;
+}
+@ -moz-keyframes spin {
+  0% {
+    -moz-transform: rotate (0deg);
+  }
+  100% {
+    -moz-transform: rotate (359deg);
+  }
+}
+@ -webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate (0deg);
+  }
+  100% {
+    -webkit-transform: rotate (359deg);
+  }
+}
+@ -o-keyframes spin {
+  0% {
+    -o-transform: rotate (0deg);
+  }
+  100% {
+    -o-transform: rotar (359deg);
+  }
+}
+@ -ms-keyframes spin {
+  0% {
+    -ms-transform: rotate (0deg);
+  }
+  100% {
+    -ms-transform: rotate (359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transformar: rotar (0deg);
+  }
+  100% {
+    transformar: rotar (359 grados);
+  }
+}
+/ * Rotaciones de los iconos y reflejo * /
+.icon-rotate-90: before {
+  -webkit-transform: rotate (90deg);
+  -moz-transform: rotate (90deg);
+  -ms-transform: rotate (90deg);
+  -o-transform: rotar (90deg);
+  transformar: rotar (90deg);
+  filter: progid: DXImageTransform.Microsoft.BasicImage (rotation = 1);
+}
+.icon-rotate-180: before {
+  -webkit-transform: rotate (180deg);
+  -moz-transform: rotate (180deg);
+  -ms-transform: rotate (180deg);
+  -o-transform: rotar (180deg);
+  transformar: rotar (180deg);
+  filter: progid: DXImageTransform.Microsoft.BasicImage (rotation = 2);
+}
+.icon-rotate-270: before {
+  -webkit-transform: rotate (270deg);
+  -moz-transform: rotar (270deg);
+  -ms-transform: rotar (270deg);
+  -o-transform: rotar (270deg);
+  transformar: rotar (270deg);
+  filter: progid: DXImageTransform.Microsoft.BasicImage (rotation = 3);
+}
+.icon-flip-horizontal: before {
+  -webkit-transform: scale (-1, 1);
+  -moz-transform: scale (-1, 1);
+  -ms-transform: scale (-1, 1);
+  -o-transform: scale (-1, 1);
+  transformar: escala (-1, 1);
+}
+.icon-flip-vertical: before {
+  -webkit-transform: scale (1, -1);
+  -moz-transform: scale (1, -1);
+  -ms-transform: scale (1, -1);
+  -o-transform: scale (1, -1);
+  transformar: escala (1, -1);
+}
+/ * Font Awesome usa el área de uso privado (PUA) de Unicode para asegurar que la pantalla
+   los lectores no leen caracteres aleatorios que representan íconos * /
+.icon-glass: before {
+  contenido: "\ f000";
+}
+.icon-music: before {
+  contenido: "\ f001";
+}
+.icon-search: before {
+  contenido: "\ f002";
+}
+.icon-envelope: before {
+  contenido: "\ f003";
+}
+.icon-heart: before {
+  contenido: "\ f004";
+}
+.icon-star: before {
+  contenido: "\ f005";
+}
+.icon-star-empty: before {
+  contenido: "\ f006";
+}
+.icon-usuario: antes {
+  contenido: "\ f007";
+}
+.icon-film: before {
+  contenido: "\ f008";
+}
+.icon-th-large: before {
+  contenido: "\ f009";
+}
+.icon-th: before {
+  contenido: "\ f00a";
+}
+.icon-th-list: before {
+  contenido: "\ f00b";
+}
+.icon-ok: before {
+  contenido: "\ f00c";
+}
+.icon-remove: before {
+  contenido: "\ f00d";
+}
+.icon-zoom-in: before {
+  contenido: "\ f00e";
+}
+.icon-zoom-out: before {
+  contenido: "\ f010";
+}
+.icon-off: before {
+  contenido: "\ f011";
+}
+.icon-signal: before {
+  contenido: "\ f012";
+}
+.icon-cog: before {
+  contenido: "\ f013";
+}
+.icon-trash: before {
+  contenido: "\ f014";
+}
+.icon-home: before {
+  contenido: "\ f015";
+}
+.icon-file: before {
+  contenido: "\ f016";
+}
+.icon-time: before {
+  contenido: "\ f017";
+}
+.icon-road: before {
+  contenido: "\ f018";
+}
+.icon-download-alt: before {
+  contenido: "\ f019";
+}
+.icon-download: before {
+  contenido: "\ f01a";
+}
+.icon-upload: before {
+  contenido: "\ f01b";
+}
+.icon-inbox: before {
+  contenido: "\ f01c";
+}
+.icon-play-circle: before {
+  contenido: "\ f01d";
+}
+.icon-repeat: antes,
+.icon-rotate-right: before {
+  contenido: "\ f01e";
+}
+/ * F020 no funciona en Safari. todos movieron uno hacia abajo * /
+.icon-refresh: before {
+  contenido: "\ f021";
+}
+.icon-list-alt: before {
+  contenido: "\ f022";
+}
+.icon-lock: before {
+  contenido: "\ f023";
+}
+.icon-flag: before {
+  contenido: "\ f024";
+}
+.icon-headphones: before {
+  contenido: "\ f025";
+}
+.icon-volume-off: before {
+  contenido: "\ f026";
+}
+.icon-volume-down: before {
+  contenido: "\ f027";
+}
+.icon-volume-up: before {
+  contenido: "\ f028";
+}
+.icon-qrcode: before {
+  contenido: "\ f029";
+}
+.icon-barcode: before {
+  contenido: "\ f02a";
+}
+.icon-tag: before {
+  contenido: "\ f02b";
+}
+.icon-tags: before {
+  contenido: "\ f02c";
+}
+.icon-book: before {
+  contenido: "\ f02d";
+}
+.icon-bookmark: before {
+  contenido: "\ f02e";
+}
+.icon-print: before {
+  contenido: "\ f02f";
+}
+.icon-camera: before {
+  contenido: "\ f030";
+}
+.icon-font: before {
+  contenido: "\ f031";
+}
+.icon-bold: before {
+  contenido: "\ f032";
+}
+.icon-italic: before {
+  contenido: "\ f033";
+}
+.icon-text-height: before {
+  contenido: "\ f034";
+}
+.icon-text-width: before {
+  contenido: "\ f035";
+}
+.icon-align-left: before {
+  contenido: "\ f036";
+}
+.icon-align-center: before {
+  contenido: "\ f037";
+}
+.icon-align-right: before {
+  contenido: "\ f038";
+}
+.icon-align-justify: before {
+  contenido: "\ f039";
+}
+.icon-list: before {
+  contenido: "\ f03a";
+}
+.icon-indent-left: before {
+  contenido: "\ f03b";
+}
+.icon-indent-right: before {
+  contenido: "\ f03c";
+}
+.icon-facetime-video: before {
+  contenido: "\ f03d";
+}
+.icon-picture: before {
+  contenido: "\ f03e";
+}
+.icon-pencil: before {
+  contenido: "\ f040";
+}
+.icon-map-marker: before {
+  contenido: "\ f041";
+}
+.icon-adjust: before {
+  contenido: "\ f042";
+}
+.icon-tint: before {
+  contenido: "\ f043";
+}
+.icon-edit: before {
+  contenido: "\ f044";
+}
+.icon-share: before {
+  contenido: "\ f045";
+}
+.icon-check: before {
+  contenido: "\ f046";
+}
+.icon-move: before {
+  contenido: "\ f047";
+}
+.icon-step-backward: before {
+  contenido: "\ f048";
+}
+.icon-fast-backward: before {
+  contenido: "\ f049";
+}
+.icon-backward: before {
+  contenido: "\ f04a";
+}
+.icon-play: before {
+  contenido: "\ f04b";
+}
+.icon-pause: before {
+  contenido: "\ f04c";
+}
+.icon-stop: before {
+  contenido: "\ f04d";
+}
+.icon-forward: before {
+  contenido: "\ f04e";
+}
+.icon-fast-forward: before {
+  contenido: "\ f050";
+}
+.icon-step-forward: before {
+  contenido: "\ f051";
+}
+.icon-expulsar: antes {
+  contenido: "\ f052";
+}
+.icon-chevron-left: before {
+  contenido: "\ f053";
+}
+.icon-chevron-right: before {
+  contenido: "\ f054";
+}
+.icon-plus-sign: before {
+  contenido: "\ f055";
+}
+.icon-signo-menos: antes {
+  contenido: "\ f056";
+}
+.icon-remove-sign: before {
+  contenido: "\ f057";
+}
+.icon-ok-sign: before {
+  contenido: "\ f058";
+}
+.icon-question-sign: before {
+  contenido: "\ f059";
+}
+.icon-info-sign: before {
+  contenido: "\ f05a";
+}
+.icon-screenshot: before {
+  contenido: "\ f05b";
+}
+.icon-remove-circle: before {
+  contenido: "\ f05c";
+}
+.icon-ok-circle: before {
+  contenido: "\ f05d";
+}
+.icon-ban-circle: before {
+  contenido: "\ f05e";
+}
+.icon-arrow-left: before {
+  contenido: "\ f060";
+}
+.icon-arrow-right: before {
+  contenido: "\ f061";
+}
+.icon-arrow-up: before {
+  contenido: "\ f062";
+}
+.icon-arrow-down: before {
+  contenido: "\ f063";
+}
+.icon-share-alt: antes,
+.icon-mail-forward: before {
+  contenido: "\ f064";
+}
+.icon-resize-full: before {
+  contenido: "\ f065";
+}
+.icon-resize-small: before {
+  contenido: "\ f066";
+}
+.icon-plus: before {
+  contenido: "\ f067";
+}
+.icon-minus: before {
+  contenido: "\ f068";
+}
+.icon-asterisk: before {
+  contenido: "\ f069";
+}
+.icon-exclamation-sign: before {
+  contenido: "\ f06a";
+}
+.icon-gift: before {
+  contenido: "\ f06b";
+}
+.icon-leaf: before {
+  contenido: "\ f06c";
+}
+.icon-fire: before {
+  contenido: "\ f06d";
+}
+.icon-eye-open: before {
+  contenido: "\ f06e";
+}
+.icon-eye-close: before {
+  contenido: "\ f070";
+}
+.icon-warning-sign: before {
+  contenido: "\ f071";
+}
+.icon-plane: before {
+  contenido: "\ f072";
+}
+.icon-calendar: before {
+  contenido: "\ f073";
+}
+.icon-random: before {
+  contenido: "\ f074";
+}
+.icon-comment: before {
+  contenido: "\ f075";
+}
+.icon-magnet: before {
+  contenido: "\ f076";
+}
+.icon-chevron-up: before {
+  contenido: "\ f077";
+}
+.icon-chevron-down: before {
+  contenido: "\ f078";
+}
+.icon-retweet: before {
+  contenido: "\ f079";
+}
+.icon-shopping-cart: before {
+  contenido: "\ f07a";
+}
+.icon-folder-close: before {
+  contenido: "\ f07b";
+}
+.icon-folder-open: before {
+  contenido: "\ f07c";
+}
+.icon-resize-vertical: before {
+  contenido: "\ f07d";
+}
+.icon-resize-horizontal: before {
+  contenido: "\ f07e";
+}
+.icon-bar-chart: before {
+  contenido: "\ f080";
+}
+.icon-twitter-sign: before {
+  contenido: "\ f081";
+}
+.icon-facebook-sign: before {
+  contenido: "\ f082";
+}
+.icon-camera-retro: before {
+  contenido: "\ f083";
+}
+.icon-key: before {
+  contenido: "\ f084";
+}
+.icon-cogs: before {
+  contenido: "\ f085";
+}
+.icon-comments: before {
+  contenido: "\ f086";
+}
+.icon-thumbs-up: before {
+  contenido: "\ f087";
+}
+.icon-thumbs-down: before {
+  contenido: "\ f088";
+}
+.icon-star-half: before {
+  contenido: "\ f089";
+}
+.icon-heart-empty: before {
+  contenido: "\ f08a";
+}
+.icon-signout: before {
+  contenido: "\ f08b";
+}
+.icon-linkedin-sign: before {
+  contenido: "\ f08c";
+}
+.icon-chincheta: antes {
+  contenido: "\ f08d";
+}
+.icon-external-link: before {
+  contenido: "\ f08e";
+}
+.icon-signin: before {
+  contenido: "\ f090";
+}
+.icon-trofeo: antes {
+  contenido: "\ f091";
+}
+.icon-github-sign: before {
+  contenido: "\ f092";
+}
+.icon-upload-alt: before {
+  contenido: "\ f093";
+}
+.icon-lemon: before {
+  contenido: "\ f094";
+}
+.icon-phone: before {
+  contenido: "\ f095";
+}
+.icon-check-empty: before {
+  contenido: "\ f096";
+}
+.icon-bookmark-empty: before {
+  contenido: "\ f097";
+}
+.icon-phone-sign: before {
+  contenido: "\ f098";
+}
+.icon-twitter: before {
+  contenido: "\ f099";
+}
+.icon-facebook: before {
+  contenido: "\ f09a";
+}
+.icon-github: before {
+  contenido: "\ f09b";
+}
+.icon-unlock: before {
+  contenido: "\ f09c";
+}
+.icon-credit-card: before {
+  contenido: "\ f09d";
+}
+.icon-rss: before {
+  contenido: "\ f09e";
+}
+.icon-hdd: before {
+  contenido: "\ f0a0";
+}
+.icon-bullhorn: before {
+  contenido: "\ f0a1";
+}
+.icon-bell: before {
+  contenido: "\ f0a2";
+}
+.icon-certificate: before {
+  contenido: "\ f0a3";
+}
+.icon-hand-right: before {
+  contenido: "\ f0a4";
+}
+.icon-hand-left: before {
+  contenido: "\ f0a5";
+}
+.icon-hand-up: before {
+  contenido: "\ f0a6";
+}
+.icon-hand-down: before {
+  contenido: "\ f0a7";
+}
+.icon-circle-arrow-left: before {
+  contenido: "\ f0a8";
+}
+.icon-circle-arrow-right: before {
+  contenido: "\ f0a9";
+}
+.icon-circle-arrow-up: before {
+  contenido: "\ f0aa";
+}
+.icon-circle-arrow-down: before {
+  contenido: "\ f0ab";
+}
+.icon-globe: before {
+  contenido: "\ f0ac";
+}
+.icon-wrench: before {
+  contenido: "\ f0ad";
+}
+.icon-tasks: before {
+  contenido: "\ f0ae";
+}
+.icon-filter: before {
+  contenido: "\ f0b0";
+}
+.icon-maletín: antes {
+  contenido: "\ f0b1";
+}
+.icon-fullscreen: before {
+  contenido: "\ f0b2";
+}
+.icon-group: before {
+  contenido: "\ f0c0";
+}
+.icon-link: before {
+  contenido: "\ f0c1";
+}
+.icon-cloud: before {
+  contenido: "\ f0c2";
+}
+.icon-beaker: before {
+  contenido: "\ f0c3";
+}
+.icon-cut: before {
+  contenido: "\ f0c4";
+}
+.icon-copy: before {
+  contenido: "\ f0c5";
+}
+.icon-paper-clip: before {
+  contenido: "\ f0c6";
+}
+.icon-save: before {
+  contenido: "\ f0c7";
+}
+.icon-sign-blank: before {
+  contenido: "\ f0c8";
+}
+.icon-reorder: before {
+  contenido: "\ f0c9";
+}
+.icon-list-ul: before {
+  contenido: "\ f0ca";
+}
+.icon-list-ol: before {
+  contenido: "\ f0cb";
+}
+.icon-tachado: antes {
+  contenido: "\ f0cc";
+}
+.icon-underline: before {
+  contenido: "\ f0cd";
+}
+.icon-table: before {
+  contenido: "\ f0ce";
+}
+.icon-magic: before {
+  contenido: "\ f0d0";
+}
+.icon-truck: before {
+  contenido: "\ f0d1";
+}
+.icon-pinterest: before {
+  contenido: "\ f0d2";
+}
+.icon-pinterest-sign: before {
+  contenido: "\ f0d3";
+}
+.icon-google-plus-sign: before {
+  contenido: "\ f0d4";
+}
+.icon-google-plus: before {
+  contenido: "\ f0d5";
+}
+.icon-money: before {
+  contenido: "\ f0d6";
+}
+.icon-caret-down: before {
+  contenido: "\ f0d7";
+}
+.icon-caret-up: before {
+  contenido: "\ f0d8";
+}
+.icon-caret-left: before {
+  contenido: "\ f0d9";
+}
+.icon-cursor-derecha: antes {
+  contenido: "\ f0da";
+}
+.icon-columns: before {
+  contenido: "\ f0db";
+}
+.icon-sort: before {
+  contenido: "\ f0dc";
+}
+.icon-sort-down: before {
+  contenido: "\ f0dd";
+}
+.icon-sort-up: before {
+  contenido: "\ f0de";
+}
+.icon-envelope-alt: before {
+  contenido: "\ f0e0";
+}
+.icon-linkedin: before {
+  contenido: "\ f0e1";
+}
+.icon-undo: antes,
+.icon-rotate-left: before {
+  contenido: "\ f0e2";
+}
+.icon-legal: before {
+  contenido: "\ f0e3";
+}
+.icon-dashboard: before {
+  contenido: "\ f0e4";
+}
+.icon-comment-alt: before {
+  contenido: "\ f0e5";
+}
+.icon-comments-alt: before {
+  contenido: "\ f0e6";
+}
+.icon-bolt: before {
+  contenido: "\ f0e7";
+}
+.icon-sitemap: before {
+  contenido: "\ f0e8";
+}
+.icon-umbrella: before {
+  contenido: "\ f0e9";
+}
+.icon-paste: before {
+  contenido: "\ f0ea";
+}
+.icon-bombilla: antes {
+  contenido: "\ f0eb";
+}
+.icon-exchange: before {
+  contenido: "\ f0ec";
+}
+.icon-cloud-download: before {
+  contenido: "\ f0ed";
+}
+.icon-cloud-upload: before {
+  contenido: "\ f0ee";
+}
+.icon-user-md: before {
+  contenido: "\ f0f0";
+}
+.icon-estetoscopio: antes {
+  contenido: "\ f0f1";
+}
+.icon-suitcase: before {
+  contenido: "\ f0f2";
+}
+.icon-bell-alt: before {
+  contenido: "\ f0f3";
+}
+.icon-coffee: before {
+  contenido: "\ f0f4";
+}
+.icon-food: before {
+  contenido: "\ f0f5";
+}
+.icon-file-alt: before {
+  contenido: "\ f0f6";
+}
+.icon-building: before {
+  contenido: "\ f0f7";
+}
+.icon-hospital: antes {
+  contenido: "\ f0f8";
+}
+.icon-ambulance: before {
+  contenido: "\ f0f9";
+}
+.icon-medkit: before {
+  contenido: "\ f0fa";
+}
+.icon-combatiente-jet: antes {
+  contenido: "\ f0fb";
+}
+.icon-beer: before {
+  contenido: "\ f0fc";
+}
+.icon-h-sign: before {
+  contenido: "\ f0fd";
+}
+.icon-plus-sign-alt: before {
+  contenido: "\ f0fe";
+}
+.icon-double-angle-left: before {
+  contenido: "\ f100";
+}
+.icon-double-angle-right: before {
+  contenido: "\ f101";
+}
+.icon-double-angle-up: before {
+  contenido: "\ f102";
+}
+.icon-double-angle-down: before {
+  contenido: "\ f103";
+}
+.icon-angle-left: before {
+  contenido: "\ f104";
+}
+.icon-angle-right: before {
+  contenido: "\ f105";
+}
+.icon-angle-up: before {
+  contenido: "\ f106";
+}
+.icon-angle-down: before {
+  contenido: "\ f107";
+}
+.icon-desktop: before {
+  contenido: "\ f108";
+}
+.icon-laptop: before {
+  contenido: "\ f109";
+}
+.icon-tablet: before {
+  contenido: "\ f10a";
+}
+.icon-mobile-phone: before {
+  contenido: "\ f10b";
+}
+.icon-circle-blank: before {
+  contenido: "\ f10c";
+}
+.icon-quote-left: before {
+  contenido: "\ f10d";
+}
+.icon-quote-right: before {
+  contenido: "\ f10e";
+}
+.icon-spinner: before {
+  contenido: "\ f110";
+}
+.icon-circle: before {
+  contenido: "\ f111";
+}
+.icon-reply: antes,
+.icon-mail-reply: before {
+  contenido: "\ f112";
+}
+.icon-folder-close-alt: before {
+  contenido: "\ f114";
+}
+.icon-folder-open-alt: before {
+  contenido: "\ f115";
+}
+.icon-expand-alt: before {
+  contenido: "\ f116";
+}
+.icon-collapse-alt: before {
+  contenido: "\ f117";
+}
+.icon-smile: before {
+  contenido: "\ f118";
+}
+.icon-frown: before {
+  contenido: "\ f119";
+}
+.icon-meh: before {
+  contenido: "\ f11a";
+}
+.icon-gamepad: before {
+  contenido: "\ f11b";
+}
+.icon-keyboard: before {
+  contenido: "\ f11c";
+}
+.icon-flag-alt: before {
+  contenido: "\ f11d";
+}
+.icon-flag-checkered: before {
+  contenido: "\ f11e";
+}
+.icon-terminal: before {
+  contenido: "\ f120";
+}
+.icon-code: before {
+  contenido: "\ f121";
+}
+.icon-reply-all: before {
+  contenido: "\ f122";
+}
+.icon-mail-reply-all: before {
+  contenido: "\ f122";
+}
+.icon-star-half-full: antes,
+.icon-star-half-empty: before {
+  contenido: "\ f123";
+}
+.icon-location-arrow: before {
+  contenido: "\ f124";
+}
+.icon-crop: before {
+  contenido: "\ f125";
+}
+.icon-code-fork: before {
+  contenido: "\ f126";
+}
+.icon-unlink: before {
+  contenido: "\ f127";
+}
+.icon-question: before {
+  contenido: "\ f128";
+}
+.icon-info: before {
+  contenido: "\ f129";
+}
+.icon-exclamation: before {
+  contenido: "\ f12a";
+}
+.icon-superíndice: antes {
+  contenido: "\ f12b";
+}
+.icon-subíndice: antes {
+  contenido: "\ f12c";
+}
+.icon-borrador: antes {
+  contenido: "\ f12d";
+}
+.icon-puzzle-piece: before {
+  contenido: "\ f12e";
+}
+.icon-microphone: before {
+  contenido: "\ f130";
+}
+.icon-microphone-off: before {
+  contenido: "\ f131";
+}
+.icon-shield: before {
+  contenido: "\ f132";
+}
+.icon-calendar-empty: before {
+  contenido: "\ f133";
+}
+.icon-fire-extinguisher: before {
+  contenido: "\ f134";
+}
+.icon-cohete: antes {
+  contenido: "\ f135";
+}
+.icon-maxcdn: before {
+  contenido: "\ f136";
+}
+.icon-chevron-sign-left: before {
+  contenido: "\ f137";
+}
+.icon-chevron-sign-right: before {
+  contenido: "\ f138";
+}
+.icon-chevron-sign-up: before {
+  contenido: "\ f139";
+}
+.icon-chevron-sign-down: before {
+  contenido: "\ f13a";
+}
+.icon-html5: before {
+  contenido: "\ f13b";
+}
+.icon-css3: before {
+  contenido: "\ f13c";
+}
+.icon-anchor: before {
+  contenido: "\ f13d";
+}
+.icon-unlock-alt: before {
+  contenido: "\ f13e";
+}
+.icon-bullseye: before {
+  contenido: "\ f140";
+}
+.icon-ellipsis-horizontal: before {
+  contenido: "\ f141";
+}
+.icon-ellipsis-vertical: antes {
+  contenido: "\ f142";
+}
+.icon-rss-sign: before {
+  contenido: "\ f143";
+}
+.icon-play-sign: before {
+  contenido: "\ f144";
+}
+.icon-ticket: before {
+  contenido: "\ f145";
+}
+.icon-menos-signo-alt: antes {
+  contenido: "\ f146";
+}
+.icon-check-minus: before {
+  contenido: "\ f147";
+}
+.icon-level-up: before {
+  contenido: "\ f148";
+}
+.icon-level-down: before {
+  contenido: "\ f149";
+}
+.icon-check-sign: before {
+  contenido: "\ f14a";
+}
+.icon-edit-sign: before {
+  contenido: "\ f14b";
+}
+.icon-external-link-sign: before {
+  contenido: "\ f14c";
+}
+.icon-share-sign: before {
+  contenido: "\ f14d";
+}
