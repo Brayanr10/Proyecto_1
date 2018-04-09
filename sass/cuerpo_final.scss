@@ -1,0 +1,20 @@
+.cuerpo_final{
+background-color: rgb(178,34,34);
+display:flex;
+justify-content: space-around;
+align-items: center;
+padding: 15px 0;
+  .contenido_final{
+    .titu_final{
+    color: white;  
+    }
+    .parrafo_final{
+    line-height: 0.4;
+    color: white;
+    }
+    .parrafo_subfinal{
+    line-height: 0.4;
+    color: white;
+    }        
+  }
+}

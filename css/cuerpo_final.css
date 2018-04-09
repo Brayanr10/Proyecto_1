@@ -1,0 +1,16 @@
+.cuerpo_final {
+  background-color: firebrick;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0; }
+  .cuerpo_final .contenido_final .titu_final {
+    color: white; }
+  .cuerpo_final .contenido_final .parrafo_final {
+    line-height: 0.4;
+    color: white; }
+  .cuerpo_final .contenido_final .parrafo_subfinal {
+    line-height: 0.4;
+    color: white; }
+
+/*# sourceMappingURL=cuerpo_final.css.map */

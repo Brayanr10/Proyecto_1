@@ -1,0 +1,42 @@
+@import "cuerpo";
+@import "cuerpo_final.scss";
+header{
+background-image: url(../img/fondo-1.png);
+			.logo_menu{	
+			margin-bottom: 430px;
+								.logo{
+								background-color: rgba(227,231,234,0.7);	
+		 						width: 90%;
+		 						margin:0 auto;
+		 						display: flex;
+		 						justify-content: space-between;
+		 						align-items: center;
+								}
+								nav{
+								background-color: rgb(178,34,34);
+								width: 90%;
+								margin: 0 auto;
+										ul{
+										display: flex;
+										justify-content: center;
+										list-style: none;
+												li{
+													a{
+													text-decoration: none;
+													color: white;
+													font-family: Lalezar;
+													padding: 10px 25px;
+													display: block;
+													&:hover{
+														background-color: white;
+														color: black;
+													}}}}}}
+			.marketing{
+				width: 90%;
+				background-color: rgba(227,231,234,0.7);
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				}
+
+}

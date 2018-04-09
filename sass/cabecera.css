@@ -1,0 +1,48 @@
+header {
+  background-image: url(../img/fondo-1.png);
+}
+
+header .logo_menu {
+  margin-bottom: 430px;
+}
+
+header .logo_menu .logo {
+  background-color: rgba(227, 231, 234, 0.7);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo_menu nav {
+  background-color: firebrick;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .logo_menu nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header .logo_menu nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Lalezar;
+  padding: 10px 25px;
+  display: block;
+}
+
+header .logo_menu nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+header .marketing {
+  width: 90%;
+  background-color: rgba(227, 231, 234, 0.7);
+  margin: 0 auto;
+}
+/*# sourceMappingURL=cabecera.css.map */

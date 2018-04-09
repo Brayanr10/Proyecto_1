@@ -1,0 +1,55 @@
+.cuerpo {
+  width: 90%;
+  height: 370px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px; }
+  .cuerpo .descuento {
+    background-image: url(../img/descuento-1.png);
+    width: 49%; }
+    .cuerpo .descuento .transparencia {
+      background-color: rgba(28, 28, 27, 0.9);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      transition: 2s; }
+      .cuerpo .descuento .transparencia:hover {
+        background-color: rgba(28, 28, 27, 0.4);
+        transition: 3s; }
+      .cuerpo .descuento .transparencia .letra_top {
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 50px 0; }
+        .cuerpo .descuento .transparencia .letra_top .impuesto {
+          font-size: 17px; }
+        .cuerpo .descuento .transparencia .letra_top .porc {
+          font-size: 100px; }
+
+.contenido {
+  margin: 0 auto;
+  width: 90%; }
+  .contenido .cont_uno {
+    text-align: center;
+    margin-bottom: 60px; }
+  .contenido .cont_dos {
+    margin-bottom: 60px; }
+  .contenido .cont_ulti {
+    text-align: center; }
+  .contenido .sub_contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contenido .sub_contenido .subt_int2 {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 15px;
+      color: #666a75; }
+
+/*# sourceMappingURL=cuerpo.css.map */

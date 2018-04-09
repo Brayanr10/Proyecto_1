@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACb,gBAAgB,EAAE,SAAc;EAChC,OAAO,EAAC,IAAI;EACZ,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,MAAM;EAEX,0CAAW;IACX,KAAK,EAAE,KAAK;EAEZ,6CAAc;IACd,WAAW,EAAE,GAAG;IAChB,KAAK,EAAE,KAAK;EAEZ,gDAAiB;IACjB,WAAW,EAAE,GAAG;IAChB,KAAK,EAAE,KAAK",
+"sources": ["../sass/cuerpo_final.scss"],
+"names": [],
+"file": "cuerpo_final.css"
+}
