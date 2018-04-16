@@ -67,6 +67,55 @@
     line-height: 0.4;
     color: white; }
 
+.logo_menu {
+  margin-bottom: 60px; }
+  .logo_menu .logo {
+    background-color: rgba(227, 231, 234, 0.7);
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .logo_menu .logo .lgo {
+      padding: 5px; }
+  .logo_menu nav {
+    background-color: firebrick;
+    width: 90%;
+    margin: 0 auto; }
+    .logo_menu nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+      .logo_menu nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Lalezar;
+        padding: 10px 25px;
+        display: block; }
+        .logo_menu nav ul li a:hover {
+          background-color: white;
+          color: black; }
+
+.titulo {
+  text-align: center; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 10px; }
+
+.conta_imagen {
+  display: grid;
+  grid-template-columns: repeat(5, 20%); }
+  .conta_imagen .concepto_imagen {
+    text-align: center;
+    font-weight: bold;
+    background: darkgray;
+    padding-bottom: 5px;
+    padding-top: 5px; }
+    .conta_imagen .concepto_imagen span {
+      font-weight: normal; }
+
 header {
   background-image: url(../img/fondo-1.png); }
   header .logo_menu {
@@ -78,6 +127,8 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      header .logo_menu .logo .lgo {
+        padding: 5px; }
     header .logo_menu nav {
       background-color: firebrick;
       width: 90%;
